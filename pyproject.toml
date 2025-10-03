@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devkit-cli"
+version = "1.0.0"
+authors = [
+  { name="Faisal Al-Sharif", email="232058582+F9-0@users.noreply.github.com" },
+]
+description = "A Professional Suite of Power Tools for Developers."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "rich>=13.0.0",
+    "requests>=2.31.0",
+    "PyJWT>=2.8.0",
+    "PyYAML>=6.0",
+    "pylint>=3.0.0",
+    "pipdeptree>=2.13.0",
+    "click>=8.0.0",
+]
+
+[project.scripts]
+devkit = "main:devkit"
