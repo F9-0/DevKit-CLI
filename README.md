@@ -49,7 +49,7 @@ Get up and running with DevKit CLI in a few simple steps. A virtual environment 
 
 **1. Clone the Repository**
 ```bash
-git clone [https://github.com/f9-0/DevKit-CLI.git](https://github.com/f9-0/DevKit-CLI.git)
+git clone https://github.com/f9-0/DevKit-CLI.git
 cd DevKit-CLI
 ```
 
