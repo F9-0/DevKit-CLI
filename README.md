@@ -1,109 +1,103 @@
-<img alt="Python" src="https://img.shields.io/badge/python-3.9%2B-blue.svg?logo=python&logoColor=white">
-<img alt="Rich" src="https://img.shields.io/badge/CLI--rich-2496ED?style=flat&logo=python&logoColor=white&labelColor=black">
-<img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg">
-<img alt="Code Quality" src="https://www.codefactor.io/repository/github/your_username/source-code-review/badge">
-
 <div align="center">
 
+```
+██████╗ ███████╗██╗   ██╗██╗  ██╗██╗████████╗     ██████╗██╗      ██╗
+██╔══██╗██╔════╝██║   ██║██║ ██╔╝██║╚══██╔══╝    ██╔════╝██║      ██║
+██║  ██║█████╗  ██║   ██║█████╔╝ ██║   ██║█████╗██║      ██║      ██║
+██║  ██║██╔══╝  ╚██╗ ██╔╝██╔═██╗ ██║   ██║╚════╝██║      ██║      ██║
+██████╔╝███████╗ ╚████╔╝ ██║  ██╗██║   ██║      ╚██████╗ ███████╗ ██║
+╚═════╝ ╚══════╝  ╚═══╝  ╚═╝  ╚═╝╚═╝   ╚═╝       ╚═════╝ ╚══════╝ ╚═╝
+```
+# DevKit CLI
+**A Professional Suite of Power Tools for Developers**
+
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg?logo=python&logoColor=white)
-![Rich](https://img.shields.io/badge/CLI--rich-2496ED?style=flat&logo=python&logoColor=white&labelColor=black)
+![Framework](https://img.shields.io/badge/built%20with-Click-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Code Quality](https://www.codefactor.io/repository/github/your_username/source-code-review/badge)
+![Tools](https://img.shields.io/badge/Power_Tools-12-blueviolet.svg)
 
 </div>
 
-A powerful command-line tool to analyze source code for quality, performance, and style issues, presenting the results in a clean, human-readable format.
+**DevKit CLI** is a powerful, integrated command-line interface that brings together a suite of essential tools for modern developers. Built with Python and Click, and enhanced with Rich, it provides a beautiful and efficient way to handle complex development tasks directly from your terminal.
 
 ---
 
-أداة سطر أوامر قوية لتحليل الشيفرة المصدرية، والكشف عن مشكلات الجودة، الأداء، ونمط الكتابة، مع عرض النتائج بشكل منظم وسهل القراءة.
+### Tools Included
+
+This is not just a collection of utilities; it's a curated suite of power tools designed to boost productivity and streamline complex workflows.
+
+| #  | Tool                   | Description                                                                    |
+|----|--------------------------|--------------------------------------------------------------------------------|
+| 1  | **Source Code Review** | Statically analyzes code for quality, performance, and style violations.         |
+| 2  | **Project Scaffolder** | Instantly creates new project structures from predefined templates. |
+| 3  | **JWT Debugger** | Decodes and validates JSON Web Tokens to inspect their payload and signature. |
+| 4  | **API Requester** | A powerful terminal client for sending HTTP requests to APIs. |
+| 5  | **JSON & YAML Formatter**| Validates and pretty-prints complex JSON or YAML files for readability.        |
+| 6  | **File Hash Generator** | Computes MD5, SHA-1, and SHA-256 hashes for file integrity verification.       |
+| 7  | **Base64 Encoder/Decoder**| Encodes and decodes strings or files using the Base64 scheme.                  |
+| 8  | **Regex Tester** | Interactively tests and debugs regular expressions against sample text.        |
+| 9  | **Directory Tree Gen** | Generates a visual, structured tree of any directory's contents.               |
+| 10 | **Dependency Analyzer** | Visualizes package dependencies from a `requirements.txt` file.   |
+| 11 | **Git Helper** | Provides productivity shortcuts for complex Git operations.                    |
+| 12 | **Secret Scanner** | Scans directories for hardcoded secrets like API keys and private keys.        |
 
 ---
 
-###  Demo
+### Installation
 
-*(Here you can add a GIF or screenshot demonstrating the tool's output.)*
+Get up and running with DevKit CLI in a few simple steps. A virtual environment is required.
 
-![Demo Placeholder](https://user-images.githubusercontent.com/10933930/224762512-b1399b24-da1a-45c1-8f5b-1e7c3311f692.png)
+**1. Clone the Repository**
+```bash
+git clone [https://github.com/f9-0/DevKit-CLI.git](https://github.com/f9-0/DevKit-CLI.git)
+cd DevKit-CLI
+```
 
-### ✨ Key Features
+**2. Create and Activate Virtual Environment**
+* **On Windows (PowerShell):**
+    ```powershell
+    python -m venv venv
+    .\venv\Scripts\Activate.ps1
+    ```
+* **On macOS / Linux (Bash/Zsh):**
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
--   **Comprehensive Analysis**: Checks for common code smells, potential bugs, and anti-patterns.
--   **Performance Profiling**: Identifies performance bottlenecks and suggests optimizations.
--   **Style Enforcement**: Ensures code conforms to standard style guides (e.g., PEP 8).
--   **Rich & Readable Output**: Uses tables, syntax highlighting, and progress bars for a superior user experience.
--   **Configurable**: Easily configure rules and analysis parameters.
+**3. Install the Project**
+This single command installs the tool along with all its dependencies and makes the `devkit` command available in your terminal.
+```bash
+# The '-e' flag installs it in "editable" mode
+pip install -e .
+```
 
-### ⚙️ Installation
+---
 
-You can install `Source-Code-Review` by cloning this repository and installing the dependencies. It is highly recommended to use a virtual environment.
+### Usage
 
-#### On Linux / macOS
+DevKit CLI is a hybrid tool that supports both a user-friendly interactive menu and direct commands for power users and automation.
+
+#### Interactive Mode
+For a visually rich experience, simply run the main command without any arguments. This will launch the beautiful interactive menu where you can select tools by number.
+```bash
+devkit
+```
+
+
+#### Direct Command Mode
+For speed and scripting, you can call any tool directly as a subcommand.
 
 ```bash
-# 1. Clone the repository
-git clone [https://github.com/your_username/source-code-review.git](https://github.com/your_username/source-code-review.git)
-cd source-code-review
+# Get a list of all available commands
+devkit --help
 
-# 2. Create and activate a virtual environment
-python3 -m venv venv
-source venv/bin/activate
+# Example: Get the hash of a file
+devkit hash ./path/to/your/file.txt
 
-# 3. Install the required packages
-pip install -r requirements.txt
+# Example: Scan a directory for secrets
+devkit scan ./path/to/project
+
+# Example: Decode a JWT
+devkit jwt "your.long.token.string"
 ```
-
-#### On Windows
-
-```powershell
-# 1. Clone the repository
-git clone [https://github.com/your_username/source-code-review.git](https://github.com/your_username/source-code-review.git)
-cd source-code-review
-
-# 2. Create and activate a virtual environment
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-
-# 3. Install the required packages
-pip install -r requirements.txt
-```
-
-### 🚀 Usage
-
-Once installed, you can run the tool from the command line.
-
-#### Analyze a single file:
-
-```bash
-python main.py path/to/your/file.py
-```
-
-#### Analyze an entire directory:
-
-The tool will recursively scan the directory for supported file types.
-
-```bash
-python main.py path/to/your/project/
-```
-
-#### Analyze with specific checks (e.g., performance only):
-
-```bash
-python main.py path/to/your/project/ --check performance
-```
-
-#### Export report to a file:
-
-```bash
-python main.py path/to/your/project/ --output report.json
-```
-
-### 🤝 Contributing
-
-Contributions are welcome! Whether it's a bug report, a new feature, or a documentation improvement, please feel free to open an issue or submit a pull request.
-
-Please read our `CONTRIBUTING.md` guide for details on our code of conduct and the process for submitting pull requests.
-
-### 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
